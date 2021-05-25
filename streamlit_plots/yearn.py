@@ -12,7 +12,7 @@ st.markdown('')
 st.sidebar.title("Visualization Selector")
 st.sidebar.markdown("Select the Vaults accordingly:")
 
-df = pd.read_csv('yearn_vaults_data.csv', index_col=0)
+df = pd.read_csv('yearn_scrapper/yearn_vaults_data.csv', index_col=0)
 
 def remove_pertge(x):
     x = str(x).replace('%', '')
